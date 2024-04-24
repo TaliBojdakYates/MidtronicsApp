@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headshot"
+            android:padding="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Naftali Bojdak-Yates"
+            android:layout_marginBottom="10dp"
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="@color/home_bg">
+
+
+            <!-- First drop-down section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Education"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:drawableStart="@drawable/edu"
+                    android:gravity="center_vertical"
+                    android:background="@color/home_bg1"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/text"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/collapsible_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ILLINOIS INSTITUTE OF TECHNOLOGY, CHICAGO, IL\nBS in Computer Engineering, MS in Autonomous Systems and Robotics, GPA: 4.0/4.0"
+                        android:padding="16dp"
+                        android:background="@color/home_bg2"
+                        android:textColor="@color/text"
+                        />
+                </LinearLayout>
+
+                <!-- Second drop-down section -->
+                <TextView
+                    android:id="@+id/card_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Projects"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:background="@color/home_bg1"
+                    android:drawableStart="@drawable/proj"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/text"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/collapsible_content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PhotoCircuits App (2023 – Present): Developed an object detection app to solve circuit analysis problems. Utilized React Native and AWS for seamless functionality. \n \n
+Number Detection Model (2023): Built MLP and CNN models, achieving 97% accuracy in number classification. Focused on data preprocessing and training. \n \n
+Classroom Availability Website (2022): Created a web app to track on-campus study spaces. Integrated PHP, MySQL, and HTML for real-time updates. \n \n
+Self-Driving Car (2021): Constructed a model car with lane assistance and obstacle avoidance. Implemented sensor-based control systems."
+                        android:padding="16dp"
+                        android:background="@color/home_bg2"
+                        android:textColor="@color/text"
+
+                        />
+                </LinearLayout>
+
+
+
+
+                <!-- Third drop-down section -->
+                <TextView
+                    android:id="@+id/card_title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Work"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:background="@color/home_bg1"
+                    android:drawableStart="@drawable/work"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/text"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/collapsible_content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Software Engineering Intern (2023): Pioneered the implementation of image recognition and machine learning at GamePlay Inc., Berkeley, CA, enhancing data collection efficiency by over 60%. \n \nSenior Guard (2018 - 2023): Trained and supervised a staff of 80 lifeguards at City of Berkeley Aquatics, ensuring the smooth operation of over 200 city activities."
+                        android:padding="16dp"
+                        android:background="@color/home_bg2"
+                        android:textColor="@color/text"
+
+                        />
+                </LinearLayout>
+
+
+                <!-- Four drop-down section -->
+                <TextView
+                    android:id="@+id/card_title4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:padding="16dp"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:background="@color/home_bg1"
+                    android:drawableStart="@drawable/contact"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/text"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/collapsible_content4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email: talibojdakyates@gmail.com \n\n Phone: (510)-853-4810"
+                        android:padding="16dp"
+                        android:background="@color/home_bg2"
+                        android:textColor="@color/text"
+
+                        />
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/navigate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Country"
+            android:layout_margin="15dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

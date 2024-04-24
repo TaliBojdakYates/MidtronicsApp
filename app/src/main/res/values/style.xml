@@ -1,0 +1,9 @@
+<!-- styles.xml -->
+<resources>
+    <style name="DataEntry">
+        <item name="android:textColor">@color/text</item>  <!-- Text color -->
+        <item name="android:textSize">20sp</item>  <!-- Text size -->
+        <item name="android:gravity">center_vertical|center_horizontal</item>  <!-- Text alignment -->
+    </style>
+</resources>
+

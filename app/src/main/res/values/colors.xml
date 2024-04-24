@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="dark_bg">#191823</color>
+    <color name="medium_bg">#201e2f</color>
+    <color name="text">#ececf4</color>
+    <color name="list_bg">#2f2c45</color>
+    <color name="home_text">#201d2b</color>
+    <color name="home_bg1">#2f2c45</color>
+    <color name="home_bg2">#433f63</color>
+    <color name="home_bg">#e6e4ec</color>
+
+</resources>
